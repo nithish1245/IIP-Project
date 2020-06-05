@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<title>MaD</title>
+ <link rel = "icon" href = "saleha.jpeg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="pro3.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 10px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+  border: 1px solid #ccc; 
+}
+.fonts {
+    font-family: 'Sofia';font-size: 10vw;
+}
+.back{
+  background-color: #00ffff;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+</style>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">More About us</a>
+  <a href="#" class="w3-bar-item w3-button">Creator</a>
+  <a href="#" class="w3-bar-item w3-button">Study Materials</a>
+  <a href="#" class="w3-bar-item w3-button">Donation help</a>
+  <a href="#" class="w3-bar-item w3-button">Acknowledgemen</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sign up</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="web.html" class="w3-bar-item w3-button">Organisations</a>
+      <a href="#" class="w3-bar-item w3-button">Our Achievements</a>
+      <a href="#" class="w3-bar-item w3-button"></a>
+    </div>
+  </div>
+  <input type="text" placeholder="Search.."> <i class="fa fa-search"></i>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="https://www.unicef.org/thailand/sites/unicef.org.thailand/files/styles/hero_desktop/public/education.JPG?itok=RgfJzfaF" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">Log in</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Log in to get updates </h4>
+      <h5>Pleasure to help you<i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Link is below</p>
+      <p>Go to our <a class="w3-text-teal" href="sample2.html">Login page</a> to learn more!</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>For any queries mail @ <a href = "nithishdhanapal21@gmail.com">MaD@gmail.com</a></p>
+    </footer>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+  <div class="back">
+    
+<h1 class="fonts">Make A Difference</h1>
+<h2 class = "fonts" style= "font-size: 4vw">Our goal:</h2>
+<h3>A guide for the village Students to explore.</h3>
+<h3>Helped over 2500+ students</h3>
+
+</div>
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+ <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="stud1.jpg"  width = "1500" height = "500">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="stud2.jpg"  width = "1500" height = "500">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="https://media.defense.gov/2014/May/29/2000798036/-1/-1/0/140429-A-UH938-720.JPG"  width = "1500" height="500">
+    
+    <div class="text"></div>
+  </div>
+
+ 
+</div>
+<br>
+
+<!-- The dots/circles -->
+
+  
+</div>
+
+
+
+</div>
+</div>
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>Who we are?</h2>
+<p>We started this organisation Make A Difference in 2015 with the aim to help village students. Having seen many village students dropping their studies after high school and having dilemma of what to study after school and ending up in wrong platform, we created this portal to connnect them with various organisation and institution in their district and giving them a guidance and skills at low or free of cost. </p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvILHA3mQX5pL7oCBmj440uZhMHOUoZRRWgoB_GfAm96kIPQYo&s" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3>Education is the movement from dark to light</h3>
+  <p>We offer them a good learning material<br>which help them get through their Entrance examination<br>and also to prepare for their board</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtREN0iFbYGH_p6Qlr6HJaPI2z2-exz4SFWqJsfbHE683LXkas&s" alt="Lights" width="100%" height="240">
+  <div class="w3-container">
+  <h3>Sports</h3>
+  
+  <p>Not only Education, we also help to create a good<br>sportsman by helping to connect with sports organisation<br> and updating with the district, state,<br>National level sports event.</p>
+  
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3cCXDAihazvMjPe_3jabZPgC8waiFNCsSJJWYBS-qjfD15_8V&s" alt="Mountains" width="100%" height="235">
+  <div class="w3-container">
+  <h3>Extra Curricular Activities</h3>
+  <p>Encourage them and enabling the students to gain<br>more Skills by participating in Workshops<br>and by recommending them to join a course with free<br>of cost</p>
+  
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2>Get connected</h2>
+    <p>Sign Up to get updates</p><br>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Students</p>
+        </li>
+        <li class="w3-padding-16"><b>Free</b> connection with Organisation</li>
+        <li class="w3-padding-16"><b>Unlimited</b> access to study materials</li>
+        <li class="w3-padding-16"><b>Explore</b> More</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">Teachers</p>
+        </li>
+        <p><b>Help poor students by passing<br> information and helping them.<br>you can also post messages of events<br>in your college or school</p>
+          <pre>               <br><br><br>                </pre>
+        <li class="w3-padding-16">
+          
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Organisation</p>
+        </li>
+        <p>Post your details and willingness<br>and get connected with various talented students</p> 
+        <pre>     <br><br><br><br><br>         </pre>
+        <li class="w3-padding-16">
+          
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+        </li>
+      </ul>
+    </div>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>We can atleast help one .</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Tamil nadu, India</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +91 9789563456</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  MaD@gmail.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<div class="container">
+<img src="https://i.pinimg.com/originals/40/be/4d/40be4d81dc0b6e62c4c2f5894efd8fcc.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+ <div class="centered"><h1 class = "fonts" style= "font-size: 6vw">Help Everywhere!</h1></div>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Initiated by ADN Team</p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
